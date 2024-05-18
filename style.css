@@ -205,7 +205,7 @@ nav a.dark-mode:hover {
 
 .container.dark-mode {
     background-color: #333;
-    color: #f4f4f9;
+    color: white;
 }
 
 .progress-bar.dark-mode {
