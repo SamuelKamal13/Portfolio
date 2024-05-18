@@ -1,3 +1,4 @@
+/* General styles */
 * {
     margin: 0;
     padding: 0;
@@ -42,7 +43,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #666;
+    color: #333;
 }
 
 .container {
@@ -137,4 +138,94 @@ button:active {
     margin-top: -100px;
     padding-top: 100px;
     color: #666;
+}
+
+.skill {
+    margin: 20px 0;
+}
+
+.skill label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 20px;
+    background-color: #007bff;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progress span {
+    position: absolute;
+    right: 10px;
+    color: white;
+    font-weight: bold;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #181818;
+    color: #f4f4f9;
+}
+
+header.dark-mode {
+    background-color: #333;
+}
+
+nav a.dark-mode {
+    color: #fff;
+}
+
+nav a.dark-mode:hover {
+    color: #333;
+}
+
+.DD.dark-mode {
+    color: white;
+}
+
+.role .dash.dark-mode{
+    background-color: white;
+}
+
+.sectionName.dark-mode {
+    color: white;
+}
+
+.container.dark-mode {
+    background-color: #333;
+    color: #f4f4f9;
+}
+
+.progress-bar.dark-mode {
+    background-color: #555;
+}
+
+.progress.dark-mode {
+    background-color: #bbb;
+}
+
+button#dark-mode-toggle {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button#dark-mode-toggle.dark-mode {
+    background-color: #333;
+    color: #fff;
 }

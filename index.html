@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,13 +18,14 @@
             <a href="#about">About</a>
             <a href="#">Projects</a>
             <a href="#">Contact Me</a>
+            <button id="dark-mode-toggle">Dark Mode</button>
         </nav>
     </header>
     <div class="info">
         <h2>Samuel Kamal's Portfolio</h2>
         <div class="role">
             <span class="dash"></span>
-            <p>Developer & Designer</p>
+            <p class="DD">Developer & Designer</p>
             <span class="dash"></span>
         </div>
         <div class="info-buttons">
@@ -32,7 +34,7 @@
         </div>
     </div>
     <div class="section">
-        <h2 id="about">About</h2>
+        <h2 class="sectionName" id="about">About</h2>
         <div class="container">
             <h3 style="color: rgb(0, 140, 255);">Samuel Kamal</h3>
             <p class="informations"><b style="color: rgb(0, 140, 255);">Age:</b> 21</p>
@@ -45,7 +47,48 @@
                 and I am constantly seeking opportunities to merge these two fields to create innovative and user-friendly digital solutions.
             </p><br>
             <p>Here are some of my skills:</p>
+            <div class="skill">
+                <label>Python (Django):</label>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;">
+                        <span>75%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <label>Game Development (Unity):</label>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;">
+                        <span>80%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <label>JavaScript:</label>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 65%;">
+                        <span>65%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <label>HTML & CSS:</label>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 95%;">
+                        <span>95%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill">
+                <label>Adobe Photoshop:</label>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 95%;">
+                        <span>95%</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
