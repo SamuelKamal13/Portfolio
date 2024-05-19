@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +13,20 @@
     <header>
         <h1>SK</h1>
         <nav>
-            <a href="#">Home</a>
-            <a href="#about">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact Me</a>
-            <button id="dark-mode-toggle">Dark Mode</button>
+            <div class="nav-links">
+                <div class="navs">
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Contact Me</a>
+                </div>
+                <button class="butn" id="dark-mode-toggle">Dark Mode</button>
+                <button id="menu-toggle" class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </nav>
     </header>
     <div class="info">
@@ -29,8 +37,8 @@
             <span class="dash"></span>
         </div>
         <div class="info-buttons">
-            <button>Projects</button>
-            <button>Contact Me</button>
+            <button class="butn">Projects</button>
+            <button class="butn">Contact Me</button>
         </div>
     </div>
     <div class="section">

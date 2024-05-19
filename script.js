@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const section = document.querySelector(".sectionName");
     const dash = document.querySelectorAll(".dash");
     const DD = document.querySelector(".DD");
-    const progressBar = document.querySelectorAll(".progress-bar");
+    const progressBars = document.querySelectorAll(".progress");
 
     toggleButton.addEventListener("click", () => {
         body.classList.toggle("dark-mode");
@@ -15,7 +15,23 @@ document.addEventListener("DOMContentLoaded", () => {
         section.classList.toggle("dark-mode");
         dash.forEach(dash => dash.classList.toggle("dark-mode"));
         DD.classList.toggle("dark-mode");
-        progressBar.forEach(bar => bar.classList.toggle("dark-mode"));
+        progressBars.forEach(bar => bar.classList.toggle("dark-mode"));
         toggleButton.classList.toggle("dark-mode");
     });
+
+    // Trigger the animation
+    progressBars.forEach(bar => {
+        const width = bar.style.width;
+        bar.style.setProperty('--target-width', width);
+        bar.classList.add('animated');
+    });
+
+    // Toggle Menu
+    let toggleBtn = document.querySelector(".menu-toggle");
+    let navs = document.querySelector(".navs");
+
+    toggleBtn.onclick = function () {
+        toggleBtn.classList.toggle("active");
+        navs.classList.toggle("open");
+    }
 });

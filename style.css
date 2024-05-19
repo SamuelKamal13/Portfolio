@@ -31,11 +31,23 @@ header {
 }
 
 nav {
-    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.navs {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 nav a {
-    margin: 0 20px;
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -44,6 +56,27 @@ nav a {
 
 nav a:hover {
     color: #333;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-toggle:focus {
+    outline: none;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 4px;
+    background-color: white;
+    margin-bottom: 3px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
 .container {
@@ -94,7 +127,7 @@ nav a:hover {
     margin-top: 10px;
 }
 
-button {
+.butn {
     background-color: transparent;
     border: 2px solid rgb(0, 140, 255);
     border-radius: 15px;
@@ -110,14 +143,14 @@ button {
     touch-action: manipulation;
 }
 
-button:hover {
+.butn:hover {
     color: #fff;
     background-color: rgb(0, 140, 255);
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);
 }
 
-button:active {
+.butn:active {
     box-shadow: none;
     transform: translateY(0);
 }
@@ -157,11 +190,26 @@ button:active {
     position: relative;
 }
 
+@keyframes fill {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--target-width);
+    }
+}
+
 .progress {
     height: 20px;
     background-color: #007bff;
     border-radius: 5px;
     position: relative;
+    width: 0;
+    transition: width 2s ease;
+}
+
+.progress.animated {
+    animation: fill 2s ease forwards;
 }
 
 .progress span {
@@ -213,7 +261,7 @@ nav a.dark-mode:hover {
 }
 
 .progress.dark-mode {
-    background-color: #bbb;
+    background-color: #007bff;
 }
 
 button#dark-mode-toggle {
@@ -228,4 +276,43 @@ button#dark-mode-toggle {
 button#dark-mode-toggle.dark-mode {
     background-color: #333;
     color: #fff;
+}
+
+@media (max-width: 991px) {
+    .nav-links .navs {
+        display: none;
+    }
+
+    .menu-toggle.active span:first-child {
+        position: relative;
+        top: 7px;
+        transform: rotate(45deg);
+    }
+    
+    .menu-toggle.active span:nth-child(2){
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:last-child {
+        position: relative;
+        bottom: 7px;
+        transform: rotate(-45deg);
+    }
+
+    .nav-links .navs.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(0, 140, 255);
+        padding: 10px;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
 }
