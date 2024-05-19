@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
     toggleButton.addEventListener("click", () => {
         body.classList.toggle("dark-mode");
         navLinks.forEach(link => link.classList.toggle("dark-mode"));
-        container.forEach(container => container.classList.toggle("dark-mode"))
-        section.forEach(section => section.classList.toggle("dark-mode"))
+        container.forEach(container => container.classList.toggle("dark-mode"));
+        section.forEach(section => section.classList.toggle("dark-mode"));
         dash.forEach(dash => dash.classList.toggle("dark-mode"));
         DD.classList.toggle("dark-mode");
         progressBars.forEach(bar => bar.classList.toggle("dark-mode"));
