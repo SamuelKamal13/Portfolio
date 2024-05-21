@@ -360,4 +360,12 @@ button#dark-mode-toggle.dark-mode {
         grid-template-columns: 1fr;
         gap: 20px;
     }
+
+    .social-media i {
+        font-size: 25px;
+    }
+
+    .social-media h4 {
+        font-size: 20px;
+    }
 }
