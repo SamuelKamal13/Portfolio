@@ -355,4 +355,9 @@ button#dark-mode-toggle.dark-mode {
     .menu-toggle {
         display: block;
     }
+
+    #contact-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }
