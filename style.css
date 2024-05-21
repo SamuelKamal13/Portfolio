@@ -89,6 +89,46 @@ nav a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+#contact-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.social-media i {
+    font-size: 30px;
+    color: #007bff;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #181818;
+    cursor: pointer;
+    position: relative;
+}
+
+.social-media a::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: #007bff;
+    transition: width 0.3s ease-in-out;
+}
+
+.social-media a:hover::after {
+    width: 100%;
+}
+
+.social-media h4 {
+    display: inline;
+    font-size: 25px;
+    margin: 0 10px;
+}
+
 .info {
     text-align: center;
     padding: 10px 0 5px 0;

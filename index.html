@@ -10,15 +10,16 @@
     <title>Samuel Kamal</title>
 </head>
 <body>
+    <!--Header-->
     <header>
         <h1>SK</h1>
         <nav>
             <div class="nav-links">
                 <div class="navs">
                     <a href="#">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#">Contact Me</a>
+                    <a href="#about">About Me</a>
+                    <a href="#projects">My Projects</a>
+                    <a href="#contact">Contact Me</a>
                 </div>
                 <button class="butn" id="dark-mode-toggle">Dark Mode</button>
                 <button id="menu-toggle" class="menu-toggle">
@@ -29,6 +30,7 @@
             </div>
         </nav>
     </header>
+    <!--Info-->
     <div class="info">
         <h2>Samuel Kamal's Portfolio</h2>
         <div class="role">
@@ -37,12 +39,13 @@
             <span class="dash"></span>
         </div>
         <div class="info-buttons">
-            <button class="butn">Projects</button>
-            <button class="butn">Contact Me</button>
+            <a href="#projects"><button class="butn">Projects</button></a>
+            <a href="#contact"><button class="butn">Contact Me</button></a>
         </div>
     </div>
+    <!--About Me Section-->
     <div class="section">
-        <h2 class="sectionName" id="about">About</h2>
+        <h2 class="sectionName" id="about">About Me</h2>
         <div class="container">
             <h3 style="color: rgb(0, 140, 255);">Samuel Kamal</h3>
             <p class="informations"><b style="color: rgb(0, 140, 255);">Age:</b> 21</p>
@@ -54,7 +57,7 @@
                 I have a deep passion for both programming and design,
                 and I am constantly seeking opportunities to merge these two fields to create innovative and user-friendly digital solutions.
             </p><br>
-            <p>Here are some of my skills:</p>
+            <h3 style="color: rgb(0, 140, 255);">Skills:</h3>
             <div class="skill">
                 <label>Python (Django):</label>
                 <div class="progress-bar">
@@ -97,12 +100,38 @@
             </div>
         </div>
     </div>
+    <!--My Prohects Section-->
     <div class="section">
-        <h2 class="sectionName" id="projects">Projects</h2>
-        <div class="container">
+        <h2 class="sectionName" id="projects">My Projects</h2>
+        <div class="container" id="project-container">
 
         </div>
     </div>
+    <!--Contact Me Section-->
+    <div class="section">
+        <h2 class="sectionName" id="contact">Contact Me</h2>
+        <div class="container" id="contact-container">
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/samuel-kamal-22022119a/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <h4>/Samuel Kamal</h4>
+                </a>
+            </div>
+            <div class="social-media">
+                <a href="https://github.com/SamuelKamal13" target="_blank">
+                    <i class="fa-brands fa-square-github"></i>
+                    <h4>/SamuelKamal13</h4>
+                </a>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/samuel.kamal.56" target="_blank">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <h4>/Samuel.Kamal.56</h4>
+                </a>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/9bb04c3ddf.js" crossorigin="anonymous"></script>
 </body>
 </html>
