@@ -319,6 +319,10 @@ button#dark-mode-toggle.dark-mode {
 }
 
 @media (max-width: 991px) {
+    .container {
+        width: 85%;
+    }
+
     .nav-links .navs {
         display: none;
     }
@@ -360,37 +364,11 @@ button#dark-mode-toggle.dark-mode {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-
-    .social-media i {
-        font-size: 30px;
-    }
-
-    .social-media h4 {
-        font-size: 20px;
-    }
 }
 
 @media (max-width: 600px) {
     #contact-container {
         grid-template-columns: 1fr;
         gap: 20px;
-    }
-
-    .social-media i {
-        font-size: 20px;
-    }
-
-    .social-media h4 {
-        font-size: medium;
-    }
-}
-
-@media (max-width: 400px){
-    .social-media i {
-        font-size: 19px;
-    }
-
-    .social-media h4 {
-        font-size: 14px;
     }
 }
