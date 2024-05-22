@@ -384,3 +384,13 @@ button#dark-mode-toggle.dark-mode {
         font-size: medium;
     }
 }
+
+@media (max-width: 400px){
+    .social-media i {
+        font-size: 19px;
+    }
+
+    .social-media h4 {
+        font-size: 14px;
+    }
+}
