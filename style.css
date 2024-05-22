@@ -375,10 +375,10 @@ button#dark-mode-toggle.dark-mode {
 
 @media (max-width: 400px) {
     .social-media i {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .social-media h4 {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
