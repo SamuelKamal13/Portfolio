@@ -371,8 +371,18 @@ button#dark-mode-toggle.dark-mode {
         grid-template-columns: 1fr;
         gap: 20px;
     }
+}
 
+@media (max-width: 400px) {
     .container {
         width: 90%;
+    }
+
+    .social-media i {
+        font-size: 20px;
+    }
+
+    .social-media h4 {
+        font-size: 18px;
     }
 }
