@@ -374,10 +374,6 @@ button#dark-mode-toggle.dark-mode {
 }
 
 @media (max-width: 400px) {
-    .container {
-        width: 90%;
-    }
-
     .social-media i {
         font-size: 20px;
     }
