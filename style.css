@@ -362,10 +362,25 @@ button#dark-mode-toggle.dark-mode {
     }
 
     .social-media i {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .social-media h4 {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    #contact-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .social-media i {
+        font-size: 20px;
+    }
+
+    .social-media h4 {
+        font-size: 15px;
     }
 }
