@@ -89,10 +89,14 @@ nav a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#contact-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
+#contact-container {    
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 40px;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-media i {
@@ -315,6 +319,10 @@ button#dark-mode-toggle {
 
 button#dark-mode-toggle.dark-mode {
     background-color: #333;
+    color: #fff;
+}
+
+.social-media h4.dark-mode {
     color: #fff;
 }
 

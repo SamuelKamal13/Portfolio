@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const dash = document.querySelectorAll(".dash");
     const DD = document.querySelector(".DD");
     const progressBars = document.querySelectorAll(".progress");
+    const contact = document.querySelectorAll(".social-media h4");
 
     toggleButton.addEventListener("click", () => {
         body.classList.toggle("dark-mode");
@@ -17,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         DD.classList.toggle("dark-mode");
         progressBars.forEach(bar => bar.classList.toggle("dark-mode"));
         toggleButton.classList.toggle("dark-mode");
+        contact.forEach(con => con.classList.toggle("dark-mode"));
     });
 
     // Trigger the animation
