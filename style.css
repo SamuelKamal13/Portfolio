@@ -367,26 +367,4 @@ button#dark-mode-toggle.dark-mode {
     .menu-toggle {
         display: block;
     }
-
-    #contact-container {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-}
-
-@media (max-width: 600px) {
-    #contact-container {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-}
-
-@media (max-width: 400px) {
-    .social-media i {
-        font-size: 25px;
-    }
-
-    .social-media h4 {
-        font-size: 20px;
-    }
 }
