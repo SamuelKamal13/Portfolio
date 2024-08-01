@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const aboutMeSection = document.getElementById("about-me-section");
+    
+    // Add the 'visible' class to the "About Me" section after a short delay
+    setTimeout(() => {
+        aboutMeSection.classList.add("visible");
+    }, 100); // Adjust the delay as needed (in milliseconds)
+
     const toggleButton = document.getElementById("dark-mode-toggle");
     const body = document.body;
     const navLinks = document.querySelectorAll("nav a");
@@ -36,4 +43,39 @@ document.addEventListener("DOMContentLoaded", () => {
         toggleBtn.classList.toggle("active");
         navs.classList.toggle("open");
     }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const scrollElements = document.querySelectorAll(".scroll-animation");
+
+    const elementInView = (el, dividend = 1) => {
+        const elementTop = el.getBoundingClientRect().top;
+
+        return (
+            elementTop <=
+            (window.innerHeight || document.documentElement.clientHeight) / dividend
+        );
+    };
+
+    const displayScrollElement = (element) => {
+        element.classList.add("visible");
+    };
+
+    const hideScrollElement = (element) => {
+        element.classList.remove("visible");
+    };
+
+    const handleScrollAnimation = () => {
+        scrollElements.forEach((el) => {
+            if (elementInView(el, 1.25)) {
+                displayScrollElement(el);
+            } else {
+                hideScrollElement(el);
+            }
+        });
+    };
+
+    window.addEventListener("scroll", () => {
+        handleScrollAnimation();
+    });
 });
