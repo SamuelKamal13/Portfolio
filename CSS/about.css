@@ -1,0 +1,38 @@
+.skill {
+    margin: 20px 0;
+}
+
+.skill label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    height: 20px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border-radius: 5px;
+    position: relative;
+    width: 0;
+    transition: width 2s ease;
+}
+
+.progress.animated {
+    animation: fill 2s ease forwards;
+}
+
+.progress span {
+    position: absolute;
+    right: 10px;
+    color: white;
+    font-weight: bold;
+    top: 50%;
+    transform: translateY(-50%);
+}

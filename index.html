@@ -1,149 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
     <title>Samuel Kamal</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--Header-->
     <header>
-        <h1>SK</h1>
-        <nav>
-            <div class="nav-links">
-                <div class="navs">
-                    <a href="#">Home</a>
-                    <a href="#about">About Me</a>
-                    <a href="#projects">My Projects</a>
-                    <a href="#contact">Contact Me</a>
-                </div>
-                <button class="butn" id="dark-mode-toggle">Dark Mode</button>
-                <button id="menu-toggle" class="menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </nav>
+      <h1>SK</h1>
+      <nav>
+        <div class="nav-links">
+          <div class="navs">
+            <a href="#">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">My Projects</a>
+            <a href="#contact">Contact Me</a>
+          </div>
+          <button id="dark-mode-toggle">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <button id="menu-toggle" class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
     </header>
     <!--Info-->
     <div class="info">
-        <h2>Samuel Kamal's Portfolio</h2>
-        <div class="role">
-            <span class="dash"></span>
-            <p class="DD">Developer & Designer</p>
-            <span class="dash"></span>
-        </div>
-        <div class="info-buttons">
-            <a href="#projects"><button class="butn">Projects</button></a>
-            <a href="#contact"><button class="butn">Contact Me</button></a>
-        </div>
+      <h2>Samuel Kamal's Portfolio</h2>
+      <div class="role">
+        <span class="dash"></span>
+        <p class="DD">Developer & Designer</p>
+        <span class="dash"></span>
+      </div>
+      <div class="info-buttons">
+        <a href="#projects"><button class="butn">My Projects</button></a>
+        <a href="#contact"><button class="butn">Contact Me</button></a>
+      </div>
     </div>
     <!--About Me Section-->
     <div class="section scroll-animation" id="about-me-section">
-        <h2 class="sectionName" id="about">About Me</h2>
-        <div class="container">
-            <h3 style="color: rgb(0, 140, 255);">Samuel Kamal</h3>
-            <p class="informations"><b style="color: rgb(0, 140, 255);">Age:</b> 21</p>
-            <p class="informations"><b style="color: rgb(0, 140, 255);">Location:</b> Bani Suef, Egypt</p>
-            <p class="informations"><b style="color: rgb(0, 140, 255);">Education:</b> Student, Faculty of Information Technology, EELU</p>
-            <hr>
-            <p>Hello! I'm Samuel Kamal, a 21-year-old student currently pursuing my studies in the Faculty of Information Technology at the Egyptian E-Learning University (EELU) in Bani Suef. I have a deep passion for both programming and design, and I am constantly seeking opportunities to merge these two fields to create innovative and user-friendly digital solutions.</p>
-            <br>
-            <h3 style="color: rgb(0, 140, 255);">Skills:</h3>
-            <div class="skill">
-                <label>Python (Django):</label>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 75%;">
-                        <span>75%</span>
-                    </div>
-                </div>
+      <h2 class="sectionName" id="about">About Me</h2>
+      <div class="container">
+        <h3 style="color: rgb(0, 140, 255)">Samuel Kamal</h3>
+        <p class="informations">
+          <b style="color: rgb(0, 140, 255)">Age:</b> 21
+        </p>
+        <p class="informations">
+          <b style="color: rgb(0, 140, 255)">Location:</b> Bani Suef, Egypt
+        </p>
+        <p class="informations">
+          <b style="color: rgb(0, 140, 255)">Education:</b> Student, Faculty of
+          Information Technology, EELU
+        </p>
+        <hr />
+        <p>
+          Hello! I'm Samuel Kamal, a 21-year-old student currently pursuing my
+          studies in the Faculty of Information Technology at the Egyptian
+          E-Learning University (EELU) in Bani Suef. I have a deep passion for
+          both programming and design, and I am constantly seeking opportunities
+          to merge these two fields to create innovative and user-friendly
+          digital solutions.
+        </p>
+        <br />
+        <h3 style="color: rgb(0, 140, 255)">Skills:</h3>
+        <div class="skill">
+          <label>Python (Django):</label>
+          <div class="progress-bar">
+            <div class="progress" style="width: 75%">
+              <span>75%</span>
             </div>
-            <div class="skill">
-                <label>Game Development (Unity):</label>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 80%;">
-                        <span>80%</span>
-                    </div>
-                </div>
-            </div>
-            <div class="skill">
-                <label>JavaScript:</label>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 40%;">
-                        <span>40%</span>
-                    </div>
-                </div>
-            </div>
-            <div class="skill">
-                <label>HTML & CSS:</label>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 95%;">
-                        <span>95%</span>
-                    </div>
-                </div>
-            </div>
-            <div class="skill">
-                <label>Adobe Photoshop:</label>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 95%;">
-                        <span>95%</span>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="skill">
+          <label>JavaScript:</label>
+          <div class="progress-bar">
+            <div class="progress" style="width: 40%">
+              <span>40%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <label>HTML & CSS:</label>
+          <div class="progress-bar">
+            <div class="progress" style="width: 95%">
+              <span>95%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <label>Adobe Photoshop:</label>
+          <div class="progress-bar">
+            <div class="progress" style="width: 95%">
+              <span>95%</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!--My Projects Section-->
     <div class="section scroll-animation">
-        <h2 class="sectionName" id="projects">My Projects</h2>
-        <div class="container" id="project-container">
+      <h2 class="sectionName" id="projects">My Projects</h2>
+      <div class="container" id="project-container">
+        <div class="project-card">
+          <h3>Recipe Page</h3>
+          <p>A recipe page challenge from Frontend Mentor.</p>
+          <a href="https://samuelkamal13.github.io/recipe-page/" target="_blank"
+            ><button>View Challenge</button></a
+          >
         </div>
+        <div class="project-card">
+          <h3>Social Links Profile</h3>
+          <p>A social links profile challenge from Frontend Mentor.</p>
+          <a
+            href="https://samuelkamal13.github.io/social-links-profile/"
+            target="_blank"
+            ><button>View Challenge</button></a
+          >
+        </div>
+        <div class="project-card">
+          <h3>Product Preview Card</h3>
+          <p>
+            A product preview card component challenge from Frontend Mentor.
+          </p>
+          <a
+            href="https://samuelkamal13.github.io/product-preview-card-component/"
+            target="_blank"
+            ><button>View Challenge</button></a
+          >
+        </div>
+        <div class="project-card">
+          <h3>NFT Preview Card</h3>
+          <p>A NFT preview card component challenge from Frontend Mentor.</p>
+          <a
+            href="https://samuelkamal13.github.io/nft-preview-card-component/"
+            target="_blank"
+            ><button>ViewChallenge</button></a
+          >
+        </div>
+        <div class="project-card">
+          <h3>QR Code Component</h3>
+          <p>A QR code component challenge from Frontend Mentor.</p>
+          <a
+            href="https://samuelkamal13.github.io/qr-code-component/"
+            target="_blank"
+            ><button>ViewChallenge</button></a
+          >
+        </div>
+        <div class="project-card">
+          <h3>Interactive Rating Component</h3>
+          <p>An interactive rating component challenge from Frontend Mentor.</p>
+          <a
+            href="https://samuelkamal13.github.io/interactive-rating-component/"
+            target="_blank"
+            ><button>ViewChallenge</button></a
+          >
+        </div>
+        <div class="project-card">
+          <h3>Blog Preview Card</h3>
+          <p>A blog preview card challenge from Frontend Mentor.</p>
+          <a
+            href="https://samuelkamal13.github.io/blog-preview-card-main/"
+            target="_blank"
+            ><button>ViewChallenge</button></a
+          >
+        </div>
+        <div class="project-card">
+          <h3>FAQ Accordion</h3>
+          <p>A FAQ accordion challenge from Frontend Mentor.</p>
+          <a
+            href="https://samuelkamal13.github.io/faq-accordion/"
+            target="_blank"
+            ><button>ViewChallenge</button></a
+          >
+        </div>
+        <div class="project-card">
+          <h3>Results Summary</h3>
+          <p>A results summary component challenge from Frontend Mentor.</p>
+          <a
+            href="https://samuelkamal13.github.io/results-summary-component/"
+            target="_blank"
+            ><button>ViewChallenge</button></a
+          >
+        </div>
+        <div class="project-card">
+          <h3>Order Summary</h3>
+          <p>An order summary component challenge from Frontend Mentor.</p>
+          <a
+            href="https://samuelkamal13.github.io/order-summary-component/"
+            target="_blank"
+            ><button>ViewChallenge</button></a
+          >
+        </div>
+      </div>
     </div>
     <!--Contact Me Section-->
     <div class="section scroll-animation">
-        <h2 class="sectionName" id="contact">Contact Me</h2>
-        <div class="container" id="contact-container">
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/samuel-kamal-22022119a/" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <h4>Linkedin</h4>
-                </a>
-            </div>
-            <div class="social-media">
-                <a href="https://github.com/SamuelKamal13" target="_blank">
-                    <i class="fa-brands fa-square-github"></i>
-                    <h4>GitHub</h4>
-                </a>
-            </div>
-            <div class="social-media">
-                <a href="mailto:samuelkamal131@gmail.com" target="_blank">
-                    <i class="fa-solid fa-envelope"></i>
-                    <h4>Gmail</h4>
-                </a>
-            </div>
-            <div class="social-media">
-                <a href="https://www.facebook.com/samuel.kamal.56" target="_blank">
-                    <i class="fa-brands fa-square-facebook"></i>
-                    <h4>Facebook</h4>
-                </a>
-            </div>
-            <div class="social-media">
-                <a href="https://wa.me/+201206109475" target="_blank">
-                    <i class="fa-brands fa-square-whatsapp"></i>
-                    <h4>WhatsApp</h4>
-                </a>
-            </div>
-        </div>
+      <h2 class="sectionName" id="contact">Contact Me</h2>
+      <div class="container" id="contact-container">
+        <a
+          href="https://www.linkedin.com/in/samuel-kamal-22022119a/"
+          target="_blank"
+          aria-label="Visit Samuel's Linkedin Profile"
+        >
+          <div class="contact-card">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </div>
+        </a>
+        <a
+          href="https://github.com/SamuelKamal13"
+          target="_blank"
+          aria-label="Visit Samuel's GitHub Profile"
+        >
+          <div class="contact-card">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </div>
+        </a>
+        <a
+          href="mailto:samuelkamal131@gmail.com"
+          target="_blank"
+          aria-label="Send Samuel an Email"
+        >
+          <div class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email</span>
+          </div>
+        </a>
+        <a
+          href="https://www.facebook.com/samuel.kamal.56"
+          target="_blank"
+          aria-label="Visit Samuel's Facebook Profile"
+        >
+          <div class="contact-card">
+            <i class="fa-brands fa-facebook"></i>
+            <span>Facebook</span>
+          </div>
+        </a>
+        <a
+          href="https://wa.me/+201206109475"
+          target="_blank"
+          aria-label="Contact Samuel on WhatsApp"
+        >
+          <div class="contact-card">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </div>
+        </a>
+      </div>
     </div>
+
     <!--Footer-->
     <footer>
-        <p>Copyright &copy; 2024 Samuel Kamal</p>
+      <p>Copyright &copy; 2024 Samuel Kamal</p>
     </footer>
     <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/9bb04c3ddf.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/9bb04c3ddf.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

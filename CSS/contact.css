@@ -1,0 +1,54 @@
+/* Contact Section */
+#contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#contact-container a {
+    text-decoration: none;
+}
+
+/* Contact Card */
+.contact-card {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border-radius: 12px;
+    padding: 15px 20px;
+    text-align: center;
+    width: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Icons */
+.contact-card i {
+    font-size: 32px;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+/* Contact Text */
+.contact-card span {
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* Hover Animation */
+.contact-card:hover i {
+    transform: scale(1.2);
+}
+
+.contact-card a {
+    text-decoration: none;
+}

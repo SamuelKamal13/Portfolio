@@ -1,0 +1,63 @@
+header {
+    background: linear-gradient(135deg, #007bff, #004a99);
+    /* More refined gradient */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 30px;
+    /* Slightly more padding for better spacing */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.navs,
+.nav-links {
+    display: flex;
+    gap: 22px;
+    /* Slightly increased gap for better spacing */
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+    transform: scale(1.05);
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    width: 32px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-toggle:focus {
+    outline: none;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 4px;
+    background-color: white;
+    margin-bottom: 4px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}

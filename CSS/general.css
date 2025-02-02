@@ -1,0 +1,56 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poetsen One", sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.container {
+    width: 75%;
+    max-width: 1200px;
+    margin: 15px 0 10px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 0;
+}
+
+.section .container hr {
+    margin: 10px 0;
+}
+
+.section h2 {
+    margin-top: -100px;
+    padding-top: 100px;
+    color: #666;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+footer {
+    margin: 30px 0 20px;
+}

@@ -1,3 +1,4 @@
+// dark mode toggle
 document.addEventListener("DOMContentLoaded", () => {
     const aboutMeSection = document.getElementById("about-me-section");
     
@@ -12,9 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.querySelectorAll(".container");
     const section = document.querySelectorAll(".sectionName");
     const dash = document.querySelectorAll(".dash");
+    const butn = document.querySelectorAll(".butn");
     const DD = document.querySelector(".DD");
     const progressBars = document.querySelectorAll(".progress");
     const contact = document.querySelectorAll(".social-media h4");
+    const projectsCard = document.querySelectorAll(".project-card");
 
     toggleButton.addEventListener("click", () => {
         body.classList.toggle("dark-mode");
@@ -25,7 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
         DD.classList.toggle("dark-mode");
         progressBars.forEach(bar => bar.classList.toggle("dark-mode"));
         toggleButton.classList.toggle("dark-mode");
+        butn.forEach(butn => butn.classList.toggle("dark-mode"));
         contact.forEach(con => con.classList.toggle("dark-mode"));
+        projectsCard.forEach(card => card.classList.toggle("dark-mode"));
     });
 
     // Trigger the animation
@@ -45,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+// Scroll Animation
 document.addEventListener("DOMContentLoaded", () => {
     const scrollElements = document.querySelectorAll(".scroll-animation");
 
@@ -77,5 +83,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.addEventListener("scroll", () => {
         handleScrollAnimation();
+    });
+});
+
+// Dark Mode Toggle Button Animation
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleButton = document.getElementById("dark-mode-toggle");
+    const icon = toggleButton.querySelector("i");
+    const body = document.body;
+
+    toggleButton.addEventListener("click", () => {
+
+        // Add animation
+        icon.classList.add("spin");
+
+        setTimeout(() => {
+            if (body.classList.contains("dark-mode")) {
+                icon.classList.replace("fa-moon", "fa-sun");
+            } else {
+                icon.classList.replace("fa-sun", "fa-moon");
+            }
+            icon.classList.remove("spin");
+        }, 300); // Delay to match animation duration
     });
 });

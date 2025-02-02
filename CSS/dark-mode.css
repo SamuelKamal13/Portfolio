@@ -1,0 +1,104 @@
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #181818;
+    color: #fff;
+}
+
+header.dark-mode {
+    background-color: #333;
+}
+
+nav a.dark-mode {
+    color: #fff;
+}
+
+nav a.dark-mode:hover {
+    color: #ffcc00;
+    transform: scale(1.05);
+}
+
+.DD.dark-mode {
+    color: white;
+}
+
+.role .dash.dark-mode {
+    background-color: white;
+}
+
+.butn.dark-mode {
+    border: 2px solid white;
+}
+
+.butn.dark-mode:hover {
+    background: linear-gradient(135deg, #444, #222);
+    border: 2px solid white;
+}
+
+.sectionName.dark-mode {
+    color: white;
+}
+
+.container.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.progress-bar.dark-mode {
+    background-color: #555;
+}
+
+.progress.dark-mode {
+    background-color: #007bff;
+}
+
+body.dark-mode .gradient-text {
+    background: linear-gradient(135deg, #444, #222);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#dark-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#dark-mode-toggle i {
+    display: inline-block;
+    transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+#dark-mode-toggle.dark-mode {
+    color: #fff;
+}
+
+.spin {
+    transform: rotate(180deg) scale(1.2);
+    opacity: 0;
+}
+
+body.dark-mode .contact-card {
+    background: linear-gradient(135deg, #444, #222);
+}
+
+body.dark-mode .contact-card i,
+body.dark-mode .contact-card span {
+    color: #f4f4f4;
+}
+
+.project-card.dark-mode {
+    background-color: #585858;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    width: fit-content;
+}
+
+.project-card.dark-mode button {
+    background: linear-gradient(135deg, #444, #222);
+    color: #fff;
+}
